@@ -67,7 +67,7 @@ if uploaded_file:
     st.dataframe(df,width=1000,height=300)
 
         
-        
+ ''' 
     #新增一個date欄位，轉成年月
     df['InvoiceDate'] = pd.to_datetime(df['InvoiceDate'])
     df['date']=df.InvoiceDate.astype(np.str).str.slice(0,8).str.replace('-','')
@@ -315,5 +315,5 @@ if uploaded_file:
     st.download_button(label='📥下載分類結果excel',
             data=df_xlsx ,
             file_name= 'result.xlsx')
-
+'''
 
