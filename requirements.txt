@@ -6,7 +6,6 @@ scikit-learn
 python-dateutil
 datetime 
 matplotlib
-mpl_toolkits
 xlsxwriter
 io
 
