@@ -1,7 +1,6 @@
 streamlit
 numpy
 pandas
-re
 pytz
 scikit-learn
 dateutil
