@@ -60,7 +60,7 @@ st.markdown("""---""")
 
 @st.cache
 def load_data():
-    df=pd.read_excel(uploaded_file,skiprows=4)
+    df=pd.read_excel(uploaded_file,skiprows=2)
     return df
 #如果有上傳檔案，即開始執行報表分析
 #df = pd.read_excel(uploaded_file,skiprows=2)
