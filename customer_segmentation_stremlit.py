@@ -62,11 +62,6 @@ st.markdown("""---""")
 #如果有上傳檔案，即開始執行報表分析
 #df = pd.read_excel(uploaded_file,skiprows=2)
 
-def read_file(uploaded_file):
-    st.write(type(uploaded_file))
-    df = pd.read_excel(uploaded_file,skiprows=2)
-    return df
-
 if uploaded_file is not None:
     df= pd.read_excel(uploaded_file)
     st.write(df)
