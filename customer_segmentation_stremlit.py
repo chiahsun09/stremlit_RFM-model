@@ -61,7 +61,7 @@ st.markdown("""---""")
 
 #如果有上傳檔案，即開始執行報表分析
 #df = pd.read_excel(uploaded_file,skiprows=2)
-@st.cache
+
 if uploaded_file:
     st.write(uploaded_file)
     uploaded_file.seek(0)
