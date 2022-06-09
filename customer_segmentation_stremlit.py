@@ -66,7 +66,7 @@ def load_data():
 #df = pd.read_excel(uploaded_file,skiprows=2)
 
 if uploaded_file is not None:
-    df=load_data
+    df=load_data(uploaded_file)
     #df= pd.read_excel(temp_file_contents)
     st.write(df)
     
