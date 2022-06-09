@@ -3,7 +3,7 @@ numpy
 pandas
 pytz
 scikit-learn
-dateutil
+python-dateutil
 datetime 
 matplotlib
 mpl_toolkits
