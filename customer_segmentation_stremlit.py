@@ -68,7 +68,7 @@ def read_file(uploaded_file):
 
 if uploaded_file is not None:
     df=read_file(uploaded_file)
-    st.write(uploaded_file)
+    st.write(df)
     #uploaded_file.seek(0)
     
     
