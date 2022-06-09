@@ -68,7 +68,7 @@ def read_file(uploaded_file):
     return df
 
 if uploaded_file is not None:
-    df= pd.read_excel(uploaded_file,skiprows=2)
+    df= pd.read_excel(uploaded_file)
     st.write(df)
     
     #uploaded_file.seek(0)
