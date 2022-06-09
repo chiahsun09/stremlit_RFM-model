@@ -7,4 +7,5 @@ python-dateutil
 datetime 
 matplotlib
 xlsxwriter
+openpyxl
 
