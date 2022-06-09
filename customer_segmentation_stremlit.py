@@ -65,7 +65,7 @@ st.markdown("""---""")
 if uploaded_file is not None:
     temp_file_contents = uploaded_file.read()
     df= pd.read_excel(temp_file_contents)
-    #st.write(temp_file_contents)
+    st.write(df)
     
     #uploaded_file.seek(0)
     
