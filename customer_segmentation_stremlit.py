@@ -68,7 +68,7 @@ if uploaded_file:
 
         
         
-    新增一個date欄位，轉成年月
+    #新增一個date欄位，轉成年月
     df['InvoiceDate'] = pd.to_datetime(df['InvoiceDate'])
     df['date']=df.InvoiceDate.astype(np.str).str.slice(0,8).str.replace('-','')
     df['date'] = pd.to_numeric(df['date'], errors='coerce')
@@ -132,7 +132,7 @@ if uploaded_file:
     reset_index().sort_values('InvoiceNo', ascending=False, axis=0)
     
 
-    InvoiceNo分5個區段
+    #InvoiceNo分5個區段
     unique_invoice=Cust_freq_count[['InvoiceNo']].drop_duplicates()
     unique_invoice['Freqency_Band'] = pd.cut(unique_invoice['InvoiceNo'], 5)
     unique_invoice=unique_invoice[['Freqency_Band']].drop_duplicates()
@@ -178,7 +178,7 @@ if uploaded_file:
     Cust_monetary = df.groupby(['CustomerID'])['Total_Price'].aggregate('sum').\
     reset_index().sort_values('Total_Price', ascending=False)
     
-    splitting Total price in 5 parts
+    #splitting Total price in 5 parts
     unique_price=Cust_monetary[['Total_Price']].drop_duplicates()
     unique_price=unique_price[unique_price['Total_Price'] > 0]
     unique_price['monetary_Band'] = pd.qcut(unique_price['Total_Price'], 5)
