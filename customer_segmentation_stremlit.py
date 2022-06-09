@@ -60,9 +60,10 @@ st.markdown("""---""")
 
 
 #如果有上傳檔案，即開始執行報表分析
-df = pd.read_excel(uploaded_file,skiprows=2)
-if df:
-    #df = pd.read_excel(uploaded_file,skiprows=2)
+#df = pd.read_excel(uploaded_file,skiprows=2)
+if uploaded_file:
+    st.write(uploaded_file)
+    df = pd.read_excel(uploaded_file,skiprows=2)
     st.markdown("""<font size="3">●原始檔檢視</font>""",unsafe_allow_html=True)
     df['InvoiceDate'] = pd.to_datetime(df['InvoiceDate'])
     st.dataframe(df,width=1000,height=300)
