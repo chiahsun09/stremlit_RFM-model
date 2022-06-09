@@ -1,0 +1,13 @@
+streamlit
+numpy
+pandas
+re
+pytz
+scikit-learn
+dateutil
+datetime 
+matplotlib
+mpl_toolkits
+xlsxwriter
+io
+
