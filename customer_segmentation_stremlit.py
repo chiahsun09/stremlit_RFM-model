@@ -58,13 +58,16 @@ st.markdown("""<font size="1"><font color="gray"><br><br>圖片和文字來源:<
 st.markdown("""---""")
 
 
-
+@st.cache
+def load_data():
+    df=pd.read_excel(uploaded_file)
+    return df
 #如果有上傳檔案，即開始執行報表分析
 #df = pd.read_excel(uploaded_file,skiprows=2)
 
 if uploaded_file is not None:
-    temp_file_contents = uploaded_file.read()
-    df= pd.read_excel(temp_file_contents)
+    df=load_data
+    #df= pd.read_excel(temp_file_contents)
     st.write(df)
     
     #uploaded_file.seek(0)
