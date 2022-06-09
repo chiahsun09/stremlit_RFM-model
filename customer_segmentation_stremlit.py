@@ -34,7 +34,7 @@ st.sidebar.download_button("下載excel sample",
      )
 st.sidebar.text("  ")
 
-uploaded_file = st.sidebar.file_uploader("2.上傳編輯完的csv", type="xlsx")
+uploaded_file = st.sidebar.file_uploader("2.上傳編輯完的csv", type="csv")
 st.sidebar.markdown("""<font size="2">3.上傳結束後，稍等1~2分鐘,<br>&nbsp;&nbsp;右邊會開始呈現分類結果。</font><br><br><br>""", unsafe_allow_html=True)
 
 
@@ -60,7 +60,7 @@ st.markdown("""---""")
 
 @st.cache
 def load_data():
-    df=pd.read_excel(uploaded_file)
+    df=pd.read_csv(uploaded_file)
     return df
 #如果有上傳檔案，即開始執行報表分析
 #df = pd.read_excel(uploaded_file,skiprows=2)
