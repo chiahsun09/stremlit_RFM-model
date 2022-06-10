@@ -58,7 +58,7 @@ st.markdown("""<font size="1"><font color="gray"><br><br>圖片和文字來源:<
 st.markdown("""---""")
 
 
-#@st.cache
+@st.cache(allow_output_mutation=True)
 def load_data():
     df=pd.read_excel(uploaded_file,skiprows=2)
     return df
