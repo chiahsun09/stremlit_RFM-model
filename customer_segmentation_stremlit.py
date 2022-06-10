@@ -1,12 +1,4 @@
-st.set_page_config(
-    page_title='請是你的VIP? RFM model', 
-    page_icon='✨',
-    initial_sidebar_state="expanded",
-     menu_items={
-         'Report a bug': "kindly email  me: runranrun0911@gmail.com ",
-         'About': "# This APP build with RFM model, help you find your VIP customers."
-     }
-)
+
 
 import numpy as np
 import pandas as pd
@@ -21,6 +13,15 @@ from mpl_toolkits.mplot3d import Axes3D
 import xlsxwriter
 from io import BytesIO
 
+st.set_page_config(
+    page_title='請是你的VIP? RFM model', 
+    page_icon='✨',
+    initial_sidebar_state="expanded",
+     menu_items={
+         'Report a bug': "kindly email  me: runranrun0911@gmail.com ",
+         'About': "# This APP build with RFM model, help you find your VIP customers."
+     }
+)
 
 
 
