@@ -34,12 +34,6 @@ with open("sample.xlsx", "rb") as file:
              file_name="sample.xlsx"
              #,mime="image/png"
            )
-
-st.sidebar.download_button("下載excel sample",
-     data="https://github.com/chiahsun09/stremlit_RFM-model/raw/main/sample.xlsx",
-     file_name='sample.xlsx'
-     #,mime='text/csv'
-     )
 st.sidebar.text("  ")
 
 uploaded_file = st.sidebar.file_uploader("2.上傳編輯完的csv", type="xlsx")
