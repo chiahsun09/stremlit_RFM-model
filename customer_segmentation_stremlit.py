@@ -28,7 +28,7 @@ def take_out_threshold(col):
 st.sidebar.markdown("""<font size="6"><b>誰是你的VIP?</b></font>""", unsafe_allow_html=True)
 st.sidebar.markdown("""<font size="2">1.若沒有樣本檔，請先下載,<br>&nbsp;&nbsp;並編輯貼上自己的資料。</font>""", unsafe_allow_html=True)
 st.sidebar.download_button("下載excel sample",
-     data="sample.xlsx",
+     data="./sample.xlsx",
      file_name='sample.xlsx'
      #,mime='text/csv'
      )
