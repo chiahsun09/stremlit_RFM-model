@@ -27,6 +27,14 @@ def take_out_threshold(col):
 #左邊sidebar部份
 st.sidebar.markdown("""<font size="6"><b>誰是你的VIP?</b></font>""", unsafe_allow_html=True)
 st.sidebar.markdown("""<font size="2">1.若沒有樣本檔，請先下載,<br>&nbsp;&nbsp;並編輯貼上自己的資料。</font>""", unsafe_allow_html=True)
+with open("sample.xlsx", "rb") as file:
+     btn = st.sidebar.download_button(
+             label="下載excel sample",
+             data=file,
+             file_name="sample.xlsx"
+             #,mime="image/png"
+           )
+
 st.sidebar.download_button("下載excel sample",
      data="https://github.com/chiahsun09/stremlit_RFM-model/raw/main/sample.xlsx",
      file_name='sample.xlsx'
