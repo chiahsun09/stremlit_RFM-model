@@ -14,14 +14,14 @@ import xlsxwriter
 from io import BytesIO
 
 st.set_page_config(
-     page_title="Ex-stream-ly Cool App",
-     page_icon="🧊",
+     page_title="請是你的VIP? RFM model",
+     page_icon="✨",
      layout="wide",
      initial_sidebar_state="expanded",
      menu_items={
          'Get Help': 'https://www.extremelycoolapp.com/help',
          'Report a bug': "https://www.extremelycoolapp.com/bug",
-         'About': "# This is a header. This is an *extremely* cool app!"
+         'About': "# This APP build with RFM model, help you find your VIP customers."
      }
  )
 
