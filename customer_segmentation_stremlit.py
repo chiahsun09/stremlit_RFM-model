@@ -338,8 +338,8 @@ try:
                 file_name= 'result.xlsx')
 
 except:
-    st.markdown("""<br><br><font size="2"><font color="red"><b>您上傳的資料格式有誤</b></font><br>
-    請檢查:<br>
+    st.markdown("""<br><br><font size="4"><font color="red"><b>您上傳的資料格式有誤,請檢查:</b></font></font><br>
+    
     1.sample.xlsx的第一、二行是否仍保留? <br>
     跑程式會自動將第一、二行略過，資料請從第4行開始貼起<br><br>
     2.每個欄位，資料格式是否有誤?<br>
