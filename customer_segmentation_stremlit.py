@@ -56,7 +56,7 @@ st.sidebar.markdown("""<font size="2">3.上傳結束後，稍等1~2分鐘,<br>&n
 
 
 #右邊的版面格式
-st.markdown("""<font size="3"><b>消費者RFM分析&nbsp;:&nbsp;<br>依消費者R(Recency)、F(Frequency)、M(Monetary)頻率來判斷，並使用機器學習K-means將其分群。</b></font>""", unsafe_allow_html=True)
+st.markdown("""<font size="3"><b>消費者RFM分析&nbsp;:&nbsp;<br>依消費者R(Recency)、F(Frequency)、M(Monetary)頻率來判斷，並使用K-means(機器學習方法之一)將其分群。</b></font>""", unsafe_allow_html=True)
 st.markdown("""<font size="2">注意&nbsp;:&nbsp;主要分析一年內的資料，若顧客最近一次消費日期超過一年，將給予相同權重分數1分。</font>""", unsafe_allow_html=True)
 st.image("https://bnextmedia.s3.hicloud.net.tw/image/album/2020-07/img-1594266434-18060@900.jpg", caption="圖一 : RFM模型", width=None)
 st.markdown("""<font size="3">●「重要價值客戶」:<br>為重要VIP客戶，營收主要來源，可多做行銷活動宣傳發送，主動連繫。<br>
