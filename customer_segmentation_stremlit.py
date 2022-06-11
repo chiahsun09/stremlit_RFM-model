@@ -282,7 +282,7 @@ try:
         #畫中心點    
         ax.scatter(kmeans.cluster_centers_[:,0],kmeans.cluster_centers_[:,1],kmeans.cluster_centers_[:,2],s=100,marker='^', c='red', alpha=0.7, label='Centroids')
         st.pyplot(fig)
-        ax.set_title('資料點示意圖      ▲為分群的中心點')
+        ax.set_title('scatter plot    ▲cluster center')
         
 
 
