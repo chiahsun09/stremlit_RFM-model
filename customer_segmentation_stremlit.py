@@ -42,7 +42,7 @@ def take_out_threshold(col):
 
 
 #左邊sidebar部份
-st.legacy_caching.clear_cache()
+st.legacy_caching.clear_cache() #重新整理時，先清緩存
 st.sidebar.markdown("""<font size="6"><b>誰是你的VIP?</b></font>""", unsafe_allow_html=True)
 st.sidebar.markdown("""<font size="2">1.若沒有樣本檔，請先下載,<br>&nbsp;&nbsp;並編輯貼上自己的資料。</font>""", unsafe_allow_html=True)
 with open("sample.xlsx", "rb") as file:
@@ -274,6 +274,7 @@ try:
     
         #3D圖
         #st.set_option('deprecation.showPyplotGlobalUse', False)
+        st.markdown("""<font size="3">3D圖中，<font color="RED">▲</font>為資料中心點</font>""",unsafe_allow_html=True)
         fig, ax = plt.subplots()
         colors=['purple', 'blue', 'green', 'gold']
         #fig = plt.figure()
