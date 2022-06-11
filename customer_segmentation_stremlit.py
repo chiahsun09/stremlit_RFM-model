@@ -12,6 +12,8 @@ import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
 import xlsxwriter
 from io import BytesIO
+from streamlit import caching
+
 
 
 st.set_page_config(
@@ -40,6 +42,7 @@ def take_out_threshold(col):
 
 
 #左邊sidebar部份
+caching.clear_cache()
 st.sidebar.markdown("""<font size="6"><b>誰是你的VIP?</b></font>""", unsafe_allow_html=True)
 st.sidebar.markdown("""<font size="2">1.若沒有樣本檔，請先下載,<br>&nbsp;&nbsp;並編輯貼上自己的資料。</font>""", unsafe_allow_html=True)
 with open("sample.xlsx", "rb") as file:
@@ -83,6 +86,7 @@ def load_data():
 try:
     #如果有上傳檔案，即開始執行報表分析
     if uploaded_file is not None:
+
         df=load_data()
         st.markdown("""<font size="3">●原始檔檢視</font>""",unsafe_allow_html=True)
         df['InvoiceDate'] = pd.to_datetime(df['InvoiceDate'])
