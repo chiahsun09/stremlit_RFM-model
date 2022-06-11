@@ -338,14 +338,15 @@ try:
                 file_name= 'result.xlsx')
 
 except:
-    st.markdown("""<font size="3"><font color="red"><b>上傳的資料格式有誤</b></font><br>
+    st.markdown("""<br><br><font size="5"><font color="red"><b>您上傳的資料格式有誤</b></font><br>
     請檢查:<br>
-    1.sample.xlsx的第一、二行是否仍保留? 跑程式會自動將第一、二行略過，資料請從第4行開始貼起<br>
-    2.每個欄位，格式是否有誤<br>
-    客戶編號:數字、文字皆可，不要有空白、特殊符號<br>
-    訂單號碼:數字、文字皆可，不要有空白、特殊符號<br>
-    訂單日期:日期格式，不要有空白、特殊符號<br>
-    小計金額:限數字<br>
+    1.sample.xlsx的第一、二行是否仍保留? <br>
+    跑程式會自動將第一、二行略過，資料請從第4行開始貼起<br><br>
+    2.每個欄位，資料格式是否有誤?<br>
+    ●客戶編號:數字、文字皆可，不要有空白、特殊符號<br>
+    ●訂單號碼:數字、文字皆可，不要有空白、特殊符號<br>
+    ●訂單日期:日期格式，不要有空白、特殊符號<br>
+    ●小計金額:限數字<br><br>
     3.使用上若仍有問題，請連繫<a href = "mailto: abc@example.com">runranrun0911@gmail.com</a>，謝謝。
     """,unsafe_allow_html=True)
 
