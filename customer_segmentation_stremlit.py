@@ -270,7 +270,7 @@ try:
         st.markdown("""<font size="3"><b>●結論:</b><br>sum分數最高，即為最重要價值VIP族群。
         被分類為<font color="red"> {0:2d} </font>的群體是VIP。""".format(vip),unsafe_allow_html=True)
         st.markdown("""<font size="3">使用k-means將客戶分為4類，客戶重要性依sum分數高低來判斷。</font>""",unsafe_allow_html=True)
-        st.markdown("""<font size="3">3D圖中，<font color="RED">▲</font>為資料中心點</font>""",unsafe_allow_html=True)
+        st.markdown("""<font size="3">3D圖中，<font color="RED">▲</font>為每一個Cluster的中心點</font>""",unsafe_allow_html=True)
         st.dataframe(Cluster_summary.applymap(lambda x: '%.2f'%x))
     
         #3D圖
