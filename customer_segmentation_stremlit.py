@@ -286,8 +286,9 @@ try:
             plt.legend()
         #畫中心點    
         ax.scatter(kmeans.cluster_centers_[:,0],kmeans.cluster_centers_[:,1],kmeans.cluster_centers_[:,2],s=100,marker='^', c='red', alpha=0.7, label='Centroids')
-        st.pyplot(fig)
         ax.set_title('scatter plot')
+        st.pyplot(fig)
+        
         
 
 
