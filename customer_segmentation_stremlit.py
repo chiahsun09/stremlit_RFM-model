@@ -286,7 +286,7 @@ try:
             plt.legend()
         #畫中心點    
         ax.scatter(kmeans.cluster_centers_[:,0],kmeans.cluster_centers_[:,1],kmeans.cluster_centers_[:,2],s=100,marker='^', c='red', alpha=0.7, label='Centroids')
-        ax.set_title('資料分布圖   紅色▲為cluster資料中心點')
+        st.markdown('資料分布圖   紅色▲為cluster資料中心點')
         st.pyplot(fig)
         
         
