@@ -354,6 +354,6 @@ except:
     ●訂單號碼:數字、文字皆可，不要有空白、特殊符號<br>
     ●訂單日期:日期格式，不要有空白、特殊符號<br>
     ●小計金額:限數字<br><br>
-    3.使用上若仍有問題，請連繫<a href = "mailto: abc@example.com">runranrun0911@gmail.com</a>，謝謝。</font>
+    3.使用上若仍有問題，按右上角☆旁選單<b>Report a bug with this app</b>通知，謝謝。</font>
     """,unsafe_allow_html=True)
 
