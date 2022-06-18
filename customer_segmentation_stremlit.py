@@ -54,7 +54,7 @@ with open("sample.xlsx", "rb") as file:
            )
 st.sidebar.text("  ")
 
-uploaded_file = st.sidebar.file_uploader("2.上傳編輯完的csv", type="xlsx")
+uploaded_file = st.sidebar.file_uploader("2.上傳編輯完的excel檔案", type="xlsx")
 st.sidebar.markdown("""<font size="2">3.上傳結束後，稍等1~2分鐘,<br>&nbsp;&nbsp;右邊會開始呈現分類結果。</font><br><br><br>""", unsafe_allow_html=True)
 
 
